@@ -189,7 +189,7 @@
     top: 20px;
     left: 40px;
     width: 70%;
-    animation: flotar 10s infinite alternate;
+    animation: flotarSvg 10s infinite alternate;
     z-index: 11;
     transform: translateX(-15px);
   }
@@ -869,6 +869,22 @@
     align-items: center;
     justify-content: center;
     padding: 5px 0px;
+  }
+  @keyframes flotarSvg {
+    0% {
+      transform: rotateY(10deg);
+    }
+    100% {
+      transform: rotateY(-10deg);
+    }
+  }
+  @keyframes flotar {
+    0% {
+      transform: translateZ(20px);
+    }
+    100% {
+      transform: translateY(-21px) translateX(-13px) translateZ(30px);
+    }
   }
 }
 /* 
@@ -1735,7 +1751,22 @@
     justify-content: center;
     padding: 5px 0px;
   }
-  /* CSS */
+  @keyframes flotarSvg {
+    0% {
+      transform: rotateY(10deg);
+    }
+    100% {
+      transform: rotateY(-10deg);
+    }
+  }
+  @keyframes flotar {
+    0% {
+      transform: translateZ(20px);
+    }
+    100% {
+      transform: translateY(-21px) translateX(-13px) translateZ(30px);
+    }
+  }
 }
 /* 
 	##Device = Tablets, Ipads (portrait)
@@ -2575,6 +2606,14 @@
     justify-content: center;
     padding: 5px 0px;
     font-size: 0.8rem;
+  }
+  @keyframes flotar {
+    0% {
+      transform: translateZ(20px);
+    }
+    100% {
+      transform: translateY(-21px) translateX(-13px) translateZ(30px);
+    }
   }
 }
 /* 
@@ -3420,6 +3459,14 @@
     padding: 5px 0px;
     font-size: 0.8rem;
   }
+  @keyframes flotar {
+    0% {
+      transform: translateZ(20px);
+    }
+    100% {
+      transform: translateY(-21px) translateX(-13px) translateZ(30px);
+    }
+  }
 }
 /* 
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -3434,16 +3481,6 @@
   */
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
-}
-@media (min-width: 600px) {
-  @keyframes flotar {
-    0% {
-      transform: rotateY(10deg);
-    }
-    100% {
-      transform: rotateY(-10deg);
-    }
-  }
 }
 @keyframes flotar {
   0% {
