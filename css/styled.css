@@ -1745,6 +1745,145 @@
   body {
     background: radial-gradient(#f8c947, #f3cc15);
   }
+  body .navegation {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    height: 60%;
+    background: honeydew;
+    inset: 20px 0px 20px 20px;
+    border-radius: 25px;
+    transition: 0.5s ease;
+    z-index: 200000;
+    width: 80px;
+    box-shadow: inset 0 0 5px #ffde00, 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  body .navegation .sidebar {
+    max-width: 80px;
+    height: 100%;
+    position: relative;
+  }
+  body .navegation .menuToggle {
+    position: absolute;
+    top: 0px;
+    background: transparent;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    padding: 0 23px;
+    transition: 0.25s;
+    gap: 0.65rem;
+  }
+  body .navegation .menuToggle .barratoggle {
+    background-color: #3d4152;
+    width: 100%;
+    height: 2px;
+    transition: all 0.5s;
+    transform-origin: left;
+  }
+  body .navegation .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  body .navegation .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  body .navegation .menu ul li {
+    transition: 0.5s;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    transform: 0.5s ease;
+    padding: 0 10px;
+  }
+  body .navegation .menu ul li.active {
+    transform: translateX(30px);
+  }
+  body .navegation .menu ul li.active a .icon {
+    color: white;
+    background: var(--clr);
+  }
+  body .navegation .menu ul li.active a .icon::before {
+    opacity: 1;
+  }
+  body .navegation .menu ul li.active a .text {
+    color: var(--clr);
+  }
+  body .navegation .menu ul li a {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+  }
+  body .navegation .menu ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px;
+    line-height: 60px;
+    font-size: 1.75rem;
+    border-radius: 10px;
+    color: #3d4152;
+  }
+  body .navegation .menu ul li a .icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    filter: blur(8px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  body .navegation .menu ul li a .text {
+    position: relative;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 1.3rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  body .navegation.open .sidebar .menuToggle {
+    transform: translateX(5px);
+  }
+  body .navegation.open .sidebar .menuToggle .barratoggle:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  body .navegation.open .sidebar .menuToggle .barratoggle:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  body .navegation.open .sidebar .menuToggle .barratoggle:nth-child(2) {
+    transition: 0;
+    opacity: 0;
+  }
+  body .navegation.open {
+    width: 250px;
+  }
+  body .navegation.open ul li.active {
+    transform: translateX(10px);
+  }
+  body .navegation.open ul li a .text {
+    opacity: 1;
+    visibility: visible;
+  }
   body main {
     position: relative;
     overflow: hidden;
