@@ -1047,6 +1047,13 @@
 					}
 
 				}
+				.FifthSection{
+					.FifthSection-Card-container{
+						grid-template-columns: repeat(2, 2fr);
+						row-gap: 50px;
+
+					}
+				}
 			}
 
 
