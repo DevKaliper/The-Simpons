@@ -887,6 +887,11 @@
     }
   }
 }
+@media (min-width: 1281px) and (max-width: 1440px) {
+  body main .ThirdSection .TS-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* 
 	##Device = Laptops, Desktops
 	##Screen = B/w 1025px to 1280px

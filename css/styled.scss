@@ -1029,6 +1029,18 @@
 				transform: translateY(-21px) translateX(-13px) translateZ(30px);
 			}
 		}
+
+		@media (max-width: 1440px){
+			main{
+				.ThirdSection{
+					.TS-grid{
+						grid-template-columns: repeat(2, 1fr);
+					}
+				}
+			}
+
+
+		}
 	}
 }
 
