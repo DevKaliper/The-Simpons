@@ -4289,7 +4289,7 @@
 	##Device = Low Resolution Tablets, Mobiles (portrait)
 	##Screen = B/w 414px to 896px
   */
-@media (min-width: 414px) and (max-width: 896px) {
+@media (min-width: 390px) and (max-width: 896px) {
   body {
     background: radial-gradient(#f8c947, #f3cc15);
   }
