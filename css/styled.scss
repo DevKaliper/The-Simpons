@@ -1034,8 +1034,18 @@
 			main{
 				.ThirdSection{
 					.TS-grid{
-						grid-template-columns: repeat(2, 1fr);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-wrap: wrap;
+						.TS-grid-gridColumn{
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							flex-wrap: wrap;
+						}
 					}
+
 				}
 			}
 

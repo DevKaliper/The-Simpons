@@ -889,7 +889,16 @@
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
   body main .ThirdSection .TS-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  body main .ThirdSection .TS-grid .TS-grid-gridColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 /* 
