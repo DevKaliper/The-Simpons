@@ -18,4 +18,4 @@ This is my first web project as such. (7-3-2023) In the beginning it was done on
 ## A product section with a fancy hover as well
 ![image](https://user-images.githubusercontent.com/122651755/226196367-844d2caf-fccf-4eb6-89a2-5ec3ced32853.png)
 
-### version 1.0/3-7-2023
+### version 1.0/7-3-2023
