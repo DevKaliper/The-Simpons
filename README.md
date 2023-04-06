@@ -1,6 +1,6 @@
 # The-Simpson
 
-This is my first web project as such. (3-7-2023) In the beginning it was done only with html css, and a little bit of JS. But since I've improved, I'll make it more fancier. I did it in Spanish but soon I will translate it into English. And its responsive in most modern devices.
+This is my first web project as such. (7-3-2023) In the beginning it was done only with html css, and a little bit of JS. But since I've improved, I'll make it more fancier. I did it in Spanish but soon I will translate it into English. And its responsive in most modern devices.
 
 
 
@@ -18,4 +18,4 @@ This is my first web project as such. (3-7-2023) In the beginning it was done on
 ## A product section with a fancy hover as well
 ![image](https://user-images.githubusercontent.com/122651755/226196367-844d2caf-fccf-4eb6-89a2-5ec3ced32853.png)
 
-### version 1.0/3-7-2023
+### version 1.0/7-3-2023
