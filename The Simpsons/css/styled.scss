@@ -260,6 +260,7 @@
 						font-size: 1.75rem;
 						text-align: center;
 						letter-spacing: 1.5px;
+						display: inline-block;
 					}
 				}
 				.SS-img-container {
@@ -272,6 +273,7 @@
 
 					box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
 					img {
+						display: inline-block;
 						border-radius: 15px;
 						position: relative;
 						top: 0;
@@ -6027,4 +6029,61 @@
 ::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px black;
 	border-radius: 5px;
+}
+
+.hidden{
+	opacity: 0;
+	visibility: hidden;
+	filter: blur(5px);
+	transform: translateX(100%);
+	transition: all 1.5s ease;
+	
+
+}
+.show{
+
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0);
+	
+	filter: blur(0px);
+	
+	
+}
+
+#a2{
+	transition-delay: 400ms;
+}
+#a3{
+	transition-delay: 700ms;
+}
+#a4{
+	transition-delay: 200ms;
+}
+#a5{
+	transition-delay: 500ms;
+}
+#a6{
+	transition-delay: 800ms;
+}
+#a7{
+	transition-delay: 300ms;
+}
+#a8{
+	transition-delay: 600ms;
+}
+#a9{
+	transition-delay: 900ms;
+}
+#a10{
+	transition-delay: 1000ms;
+}
+
+//crear un media query con prefers reducded motion
+@media (prefers-reduced-motion) {
+	.hidden{
+		
+		transition: none;
+		
+	}
 }
