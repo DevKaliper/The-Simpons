@@ -6036,7 +6036,7 @@
 	visibility: hidden;
 	filter: blur(5px);
 	transform: translateX(100%);
-	transition: all 1.5s ease;
+	transition: all 2s ease;
 	
 
 }
@@ -6086,4 +6086,9 @@
 		transition: none;
 		
 	}
+}
+
+.SecondSection{
+	min-height: 100%;
+	width: 100%;
 }
