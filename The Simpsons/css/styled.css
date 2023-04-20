@@ -236,6 +236,7 @@
     font-size: 1.75rem;
     text-align: center;
     letter-spacing: 1.5px;
+    display: inline-block;
   }
   body main .SecondSection .SS-img-container {
     display: flex;
@@ -247,6 +248,7 @@
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
   }
   body main .SecondSection .SS-img-container img {
+    display: inline-block;
     border-radius: 15px;
     position: relative;
     top: 0;
@@ -667,8 +669,7 @@
     top: 0;
     right: 0;
     pointer-events: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   body main .FifthSection .FifthSection-Card-container .FifthSection-Card-container-Main .FifthSection-card-imgcontainer img {
     transform-origin: top right;
@@ -1566,8 +1567,7 @@
     top: 0;
     right: 0;
     pointer-events: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   body main .FifthSection .FifthSection-Card-container .FifthSection-Card-container-Main .FifthSection-card-imgcontainer img {
     transform-origin: top right;
@@ -2421,8 +2421,7 @@
     top: 0;
     right: 0;
     pointer-events: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   body main .FifthSection .FifthSection-Card-container .FifthSection-Card-container-Main .FifthSection-card-imgcontainer img {
     transform-origin: top right;
@@ -3273,8 +3272,7 @@
     top: 0;
     right: 0;
     pointer-events: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   body main .FifthSection .FifthSection-Card-container .FifthSection-Card-container-Main .FifthSection-card-imgcontainer img {
     transform-origin: top right;
@@ -4074,8 +4072,7 @@
     top: 0;
     right: 0;
     pointer-events: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   body main .FifthSection .FifthSection-Card-container .FifthSection-Card-container-Main .FifthSection-card-imgcontainer img {
     transform-origin: top right;
@@ -4875,8 +4872,7 @@
     top: 100px;
     right: 0;
     pointer-events: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   body main .FifthSection .FifthSection-Card-container .FifthSection-Card-container-Main .FifthSection-card-imgcontainer img {
     transform-origin: top right;
@@ -5103,4 +5099,65 @@
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px black;
   border-radius: 5px;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 2s ease;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0px);
+}
+
+#a2 {
+  transition-delay: 400ms;
+}
+
+#a3 {
+  transition-delay: 700ms;
+}
+
+#a4 {
+  transition-delay: 200ms;
+}
+
+#a5 {
+  transition-delay: 500ms;
+}
+
+#a6 {
+  transition-delay: 800ms;
+}
+
+#a7 {
+  transition-delay: 300ms;
+}
+
+#a8 {
+  transition-delay: 600ms;
+}
+
+#a9 {
+  transition-delay: 900ms;
+}
+
+#a10 {
+  transition-delay: 1000ms;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.SecondSection {
+  min-height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=styled.css.map */
